@@ -1,0 +1,442 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  background-color: #260705;
+}
+article {
+  margin: 10px;
+  padding: 10px;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.full {
+  height: 100vh;
+  gap: 10px;
+}
+/*header*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navigation1 {
+  background-color: #d99152;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: #260705 solid 5px;
+  border-radius: 1.5rem;
+  position: fixed;
+  text-transform: uppercase;
+  z-index: 99;
+}
+.navigation1 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.navigation1 li {
+  list-style-type: none;
+  padding: 10px 25px;
+}
+.navigation1 li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navigation1 a:hover {
+  color: #260705;
+  transition: color 1.5s 200ms;
+  cursor: pointer;
+}
+/*main*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/*first article */
+.fierySword h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fierySword {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+}
+
+.fierySword img {
+  height: 600px;
+}
+
+/*second article */
+.fromHeaven {
+  color: #ffffff;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+}
+.fromHeaven img {
+  height: 500px;
+  border-radius: 20px;
+}
+.fromHeaven section {
+  text-align: center;
+  background-color: #d99152;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 0 30px;
+  line-height: 2.5rem;
+}
+.fromHeaven h1 {
+  font-size: 3rem;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.fromHeaven p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/*third article*/
+.stpaulfight {
+  display: none;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.stpaulfight section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  background-color: #d99152;
+  border-radius: 40px;
+  padding: 30px;
+  margin: 0 30px;
+  line-height: 2.5rem;
+}
+.stpaulfight h1 {
+  font-size: 3rem;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.stpaulfight p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.stpaulfight img {
+  height: 500px;
+  border-radius: 20px;
+}
+/*footer*/
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.theFierySword {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.theFierySword img {
+  height: 800px;
+  transform: scaleX(-1);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.theFierySword p {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.end ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #d99152;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.end li {
+  list-style-type: none;
+  color: #ffffff;
+  padding: 10px 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+/*finish*/
+
+/*button*/
+.screen1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+  padding: 15px;
+}
+.one,
+.two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d99152;
+  padding: 15px 10px;
+  border-radius: 20px;
+  width: 100%;
+}
+.one h2,
+.two h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 10px;
+  text-transform: uppercase;
+}
+.one button,
+.two button {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 5px 30px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #260705;
+  color: #ffffff;
+  border-radius: 1rem;
+  border: none;
+}
+.one button:hover,
+.two button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 1s ease-in-out;
+}
+.screen2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*media*/
+
+@media only screen and (max-width: 600px) {
+  .end li {
+    font-size: 0.7rem !important;
+  }
+
+  .navigation1 li a {
+    font-size: 1rem;
+  }
+  .one h2,
+  .two h2 {
+    font-size: 1.5rem;
+  }
+  .one button,
+  .two button {
+    font-size: 1rem;
+  }
+
+  /* --------------------------*/
+
+  .fierySword {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .theFierySword {
+    display: flex;
+    flex-direction: column;
+  }
+  /* --------------------------*/
+
+  .end li {
+    font-size: 1rem;
+  }
+  /*second article */
+  .fromHeaven {
+    padding: 0;
+    flex-direction: column-reverse;
+    z-index: 2;
+  }
+  .fromHeaven img {
+    height: 250px !important;
+  }
+
+  .fromHeaven h1 {
+    font-size: 1.5rem !important;
+  }
+  .fromHeaven p {
+    font-weight: bold;
+    font-size: 0.5rem !important;
+  }
+  /*third article*/
+  .stpaulfight {
+    margin-bottom: 5rem;
+  }
+  .stpaulfight h1 {
+    font-size: 1.5rem !important;
+  }
+  .stpaulfight p {
+    font-weight: bold;
+    font-size: 0.5rem !important;
+  }
+  .stpaulfight img {
+    height: 250px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .theFierySword p {
+    font-size: 1rem !important;
+  }
+  .theFierySword img {
+    height: 250px !important;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .fierySword h1 {
+    font-size: 2rem;
+  }
+
+  .fierySword img {
+    height: 350px;
+  }
+
+  .theFierySword p {
+    font-size: 2rem !important;
+  }
+  .theFierySword img {
+    height: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    gap: 20rem;
+  }
+  .theFierySword p {
+    font-size: 3rem;
+  }
+  .theFierySword img {
+    height: 450px;
+  }
+  /*second article */
+  .fromHeaven {
+    padding: 0;
+    flex-direction: column-reverse;
+    z-index: 2;
+  }
+  .fromHeaven img {
+    height: 350px !important;
+  }
+
+  .fromHeaven h1 {
+    font-size: 1.5rem !important;
+  }
+  .fromHeaven p {
+    font-weight: bold;
+    font-size: 1rem !important;
+  }
+  /*third article*/
+  .stpaulfight {
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .stpaulfight h1 {
+    font-size: 1.5rem !important;
+  }
+  .stpaulfight p {
+    font-weight: bold;
+    font-size: 1rem !important;
+  }
+  .stpaulfight img {
+    height: 350px !important;
+    border-radius: 20px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .theFierySword p {
+    font-size: 3rem;
+  }
+  .theFierySword img {
+    height: 450px;
+  }
+  /*second article */
+
+  .fromHeaven img {
+    height: 450px;
+    border-radius: 20px;
+  }
+
+  .fromHeaven h1 {
+    font-size: 2rem;
+  }
+  .fromHeaven p {
+    font-weight: bold;
+
+    font-size: 1rem;
+  }
+  /*third article*/
+
+  .stpaulfight h1 {
+    font-size: 2rem;
+  }
+  .stpaulfight p {
+    font-weight: bold;
+
+    font-size: 1rem;
+  }
+  .stpaulfight img {
+    height: 450px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .fierySword h1 {
+    font-size: auto;
+  }
+
+  .fierySword img {
+    height: auto;
+  }
+  .theFierySword p {
+    font-size: auto;
+  }
+  .theFierySword img {
+    height: auto;
+    z-index: -1;
+  }
+}
